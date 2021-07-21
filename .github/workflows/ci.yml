@@ -9,7 +9,6 @@ jobs:
       matrix:
         emacs-version:
           - 25.3
-          - 26.3
           - 27.2
           - snapshot
 
