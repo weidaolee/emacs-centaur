@@ -33,7 +33,15 @@
 ;; Directional window-selection routines
 (use-package windmove
   :ensure nil
-  :hook (after-init . windmove-default-keybindings))
+  :init
+  (global-set-key [(ctrl shift left)] 'windmove-left)
+  (global-set-key [(ctrl shift right)] 'windmove-right)
+  (global-set-key [(ctrl shift up)] 'windmove-up)
+  (global-set-key [(ctrl shift down)] 'windmove-down)
+  )
+;; (use-package windmove
+;;   :ensure nil
+;;   :hook (after-init . windmove-default-keybindings))
 
 ;; Restore old window configurations
 (use-package winner

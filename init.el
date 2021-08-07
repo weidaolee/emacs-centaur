@@ -148,5 +148,11 @@
 (require 'init-elixir)
 (require 'init-web)
 
+;; Customize
+;; (require 'custom)
+;; (require 'shift-region-left-right)
+(normal-erase-is-backspace-mode nil)
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
